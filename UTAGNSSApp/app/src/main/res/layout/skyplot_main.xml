@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dashboardview"
+        android:padding="15dp">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_weight="4">
+            <com.utahere.gnssapp.SkyplotView
+                android:id="@+id/positionview"
+                android:layout_width="fill_parent"
+                android:layout_height="1000px" />
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal" android:layout_width="fill_parent"
+            android:layout_height="0px" android:layout_weight="1">
+            <com.utahere.gnssapp.GPSStateView
+                android:id="@+id/gpsstate" android:layout_width="0px"
+                android:layout_weight="1" android:layout_height="fill_parent" />
+            <com.yunnanexplorer.android.ygps.DataView
+                android:id="@+id/satinsky" android:layout_width="0px"
+                android:layout_weight="1" android:layout_height="fill_parent" />
+            <com.yunnanexplorer.android.ygps.DataView
+                android:id="@+id/satinfix" android:layout_width="0px"
+                android:layout_weight="1" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal" android:layout_width="fill_parent"
+            android:layout_height="0px" android:layout_weight="1">
+            <com.yunnanexplorer.android.ygps.DataView
+                android:id="@+id/latitude" android:layout_width="0px"
+                android:layout_weight="1" android:layout_height="fill_parent" />
+            <com.yunnanexplorer.android.ygps.DataView
+                android:id="@+id/longitude" android:layout_width="0px"
+                android:layout_weight="1" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal" android:layout_width="fill_parent"
+            android:layout_height="0px" android:layout_weight="1">
+            <com.yunnanexplorer.android.ygps.DataView
+                android:id="@+id/accuracy" android:layout_width="0px"
+                android:layout_weight="1" android:layout_height="fill_parent" />
+            <com.yunnanexplorer.android.ygps.DataView
+                android:id="@+id/altitude" android:layout_width="0px"
+                android:layout_weight="1" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal" android:layout_width="fill_parent"
+            android:layout_height="0px" android:layout_weight="1">
+            <com.yunnanexplorer.android.ygps.DataView
+                android:id="@+id/speed" android:layout_width="0px"
+                android:layout_weight="1" android:layout_height="fill_parent" />
+            <com.yunnanexplorer.android.ygps.DataView
+                android:id="@+id/bearing" android:layout_width="0px"
+                android:layout_weight="1" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal" android:layout_width="fill_parent"
+            android:layout_height="0px" android:layout_weight="1">
+            <com.yunnanexplorer.android.ygps.DataView
+                android:id="@+id/ttff" android:layout_width="0px"
+                android:layout_weight="1" android:layout_height="fill_parent" />
+            <com.yunnanexplorer.android.ygps.DataView
+                android:id="@+id/tslf" android:layout_width="0px"
+                android:layout_weight="1" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal" android:layout_width="fill_parent"
+            android:layout_height="0px" android:layout_weight="1">
+            <com.yunnanexplorer.android.ygps.DateView
+                android:id="@+id/time" android:layout_width="0px"
+                android:layout_weight="1" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal" android:layout_width="fill_parent"
+            android:layout_height="0px" android:layout_weight="1">
+            <com.yunnanexplorer.android.ygps.DateView
+                android:id="@+id/devicetime" android:layout_width="0px"
+                android:layout_weight="1" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

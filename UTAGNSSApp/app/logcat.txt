@@ -1,0 +1,36 @@
+--------- beginning of /dev/log/main
+W/qdhwcomposer(  276): Excessive delay reading vsync: took 792 ms
+--------- beginning of /dev/log/system
+V/AlarmManager(  816): waitForAlarm result :8
+D/KeyguardClockWidgetService( 2208): onReceive action=android.intent.action.TIME_TICK
+V/AlarmManager(  816): ClockReceiver onReceive() ACTION_TIME_TICK
+D/KeyguardUpdateMonitor( 1126): received broadcast android.intent.action.TIME_TICK
+D/KeyguardUpdateMonitor( 1126): handleTimeUpdate
+D/STATUSBAR-IconMerger( 1126): checkOverflow(504), More:true, Req:true Child:11
+D/daemonapp( 4106): [MSC_Accu_Daemon]>>> U:1081 [0:0] SR h:4, m:0
+D/daemonapp( 4106): [MSC_Accu_Daemon]>>> U:1097 [0:0] SS h:21, m:0
+W/EDMNativeHelper(  266): EDMNativeHelperService is published
+W/qdhwcomposer(  276): Excessive delay reading vsync: took 593 ms
+D/STATUSBAR-NetworkController( 1126): onSignalStrengthsChanged signalStrength=SignalStrength: 99 -1 -1 -1 -1 -1 -1 19 -111 2147483647 -8 -1 2147483647 gsm|lte 0x1 level=1
+W/EDMNativeHelper(  266): EDMNativeHelperService is published
+W/qdhwcomposer(  276): Excessive delay reading vsync: took 775 ms
+W/EDMNativeHelper(  266): EDMNativeHelperService is published
+W/qdhwcomposer(  276): Excessive delay reading vsync: took 810 ms
+W/EDMNativeHelper(  266): EDMNativeHelperService is published
+W/qdhwcomposer(  276): Excessive delay reading vsync: took 775 ms
+W/EDMNativeHelper(  266): EDMNativeHelperService is published
+W/qdhwcomposer(  276): Excessive delay reading vsync: took 792 ms
+D/STATUSBAR-NetworkController( 1126): onSignalStrengthsChanged signalStrength=SignalStrength: 99 -1 -1 -1 -1 -1 -1 19 -112 2147483647 -60 -1 2147483647 gsm|lte 0x1 level=1
+W/EDMNativeHelper(  266): EDMNativeHelperService is published
+D/SSRMv2:Monitor(  816): SIOP:: AP = 380, Prev AP = 380, Duration = 10056, PST = 376
+W/qdhwcomposer(  276): Excessive delay reading vsync: took 791 ms
+W/EDMNativeHelper(  266): EDMNativeHelperService is published
+W/qdhwcomposer(  276): Excessive delay reading vsync: took 809 ms
+D/BatteryService(  816): level:38, scale:100, status:2, health:2, present:true, voltage: 3865, temperature: 307, technology: Li-ion, AC powered:false, USB powered:true, Wireless powered:false, icon:17303408, invalid charger:0, online:4, current avg:460, charge type:1, power sharing:false
+D/BatteryService(  816): Sending ACTION_BATTERY_CHANGED.
+D/HeadsetStateMachine( 1514): Disconnected process message: 10
+D/KeyguardUpdateMonitor( 1126): received broadcast android.intent.action.BATTERY_CHANGED
+D/KeyguardUpdateMonitor( 1126): handleBatteryUpdate
+D/STATUSBAR-PhoneStatusBar( 1126):  mBrightnessEnablebySettings = true mBrightnessEnablebyBattery = true mBrightnessEnablebyDisableFlag = true mPmsBrightnessEnablebySettings = true
+D/BatteryMeterView( 1126): ACTION_BATTERY_CHANGED : level:38 status:2 health:2
+W/EDMNativeHelper(  266): EDMNativeHelperService is published

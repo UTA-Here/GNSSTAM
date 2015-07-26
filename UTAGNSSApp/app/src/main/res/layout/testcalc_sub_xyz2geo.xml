@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="25dp">
+
+        <TextView
+            android:text="Calculate XYZ to Geo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="15dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:text="X-Coordinate" />
+            <EditText
+                android:id="@+id/EditXCoordinate"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.70"
+                android:hint="Enter x-coordinates">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:text="Y-Coordinate" />
+            <EditText
+                android:id="@+id/EditYCoordinate"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.70"
+                android:hint="Enter y-coordinates">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:text="Z-Coordinate" />
+            <EditText
+                android:id="@+id/EditZCoordinate"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.70"
+                android:hint="Enter z-coordinates">
+            </EditText>
+
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/radioMethods">
+                <RadioButton android:id="@+id/radio_bm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtbm" />
+                <RadioButton android:id="@+id/radio_hmm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txthmm" />
+                <RadioButton android:id="@+id/radio_tm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txttm" />
+                <RadioButton android:id="@+id/radio_aam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtaam" />
+                <RadioButton android:id="@+id/radio_bwm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtbwm" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ButtonCalculate"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:onClick="submit_xyz2geo"
+            android:layout_width="fill_parent">
+        </Button>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="48dp"
+            android:text="@string/result"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+</ScrollView>

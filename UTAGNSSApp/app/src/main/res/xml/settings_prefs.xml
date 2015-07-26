@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <PreferenceCategory android:title="User location" >
+        <CheckBoxPreference
+            android:key="com.utahere.gnssapp.settings.setManLoc"
+            android:title="Manual location"
+            android:summary="Check this box to use address below"
+            android:defaultValue="false" />
+        <EditTextPreference
+            android:key="com.utahere.gnssapp.settings.setUserLoc"
+            android:title="Set user location"
+            android:summary="Click here to set user location" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Data" >
+        <CheckBoxPreference
+            android:key="com.utahere.gnssapp.settings.setDebugMode"
+            android:title="Debug mode"
+            android:summary="Turn on debug mode"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:key="com.utahere.gnssapp.settings.setShowGPSSats"
+            android:title="GPS"
+            android:summary="Show GLONASS satellites"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="com.utahere.gnssapp.settings.setShowGLONASSSats"
+            android:title="GLONASS"
+            android:summary="Show GLONASS satellites"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="com.utahere.gnssapp.settings.setSchOnWifi"
+            android:title="Wifi"
+            android:summary="Only update on Wifi"
+            android:defaultValue="true" />
+        <EditTextPreference android:title="Data cache"
+            android:key="com.utahere.gnssapp.settings.setDateRange"
+            android:summary="How much data to keep?"
+            android:defaultValue="2" />
+        <EditTextPreference android:title="GPS URL"
+            android:key="com.utahere.gnssapp.settings.setGPSURL"
+            android:summary="URL for GPS historic data"
+            android:defaultValue="https://igscb.jpl.nasa.gov/igscb/product/" />
+        <EditTextPreference android:title="GLONASS URL"
+            android:key="com.utahere.gnssapp.settings.setGLONASSURL"
+            android:summary="URL for GLONASS historic data"
+            android:defaultValue="https://igscb.jpl.nasa.gov/igscb/glonass/products/" />
+        <EditTextPreference android:title="Scheduled Time"
+            android:key="com.utahere.gnssapp.settings.setSchTime"
+            android:summary="Time for nightly updates"
+            android:defaultValue="01:00" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

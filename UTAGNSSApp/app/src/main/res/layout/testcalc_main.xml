@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="25dp">
+        <TextView
+            android:text="Calculators"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="15dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:text="Geo to XYZ"
+            android:onClick="ButtonOnClick_geo2xyz"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="15dp" />
+
+        <Button
+            android:text="XYZ to Geo"
+            android:onClick="ButtonOnClick_xyz2geo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="15dp" />
+
+        <Button
+            android:text="XYZ to ENU"
+            android:onClick="ButtonOnClick_xyz2enu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="15dp" />
+
+        <Button
+            android:text="ENU to XYZ"
+            android:onClick="ButtonOnClick_enu2xyz"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="15dp" />
+
+        <Button
+            android:text="Interpolate Satellite Position"
+            android:onClick="ButtonOnClick_intsatpos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="15dp" />
+
+
+        <Button
+            android:text="Satellite Elevation &amp; Azimuth"
+            android:onClick="ButtonOnClick_sateleazi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="15dp" />
+
+        <Button
+            android:text="Degrees to Radians"
+            android:onClick="ButtonOnClick_deg2rad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="15dp" />
+
+        <Button
+            android:text="Radians to Degrees"
+            android:onClick="ButtonOnClick_rad2deg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="15dp" />
+    </LinearLayout>
+</ScrollView>

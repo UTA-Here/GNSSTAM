@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="25dp">
+        <TextView
+            android:id="@+id/textView1"
+            android:text="Populate Satellite Data"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="15dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/drop_db"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/drop_db" />
+
+        <Button
+            android:id="@+id/start_service"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drop_db"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/start_data_refresh" />
+
+        <Button
+            android:id="@+id/stop_Service"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/start_service"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/stop_data_refresh" />
+
+        <TextView
+            android:id="@+id/refresh_stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="48dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:text="Scheduled Data Update"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:padding="15dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enabling nightly updates will ensure that the satellite data will be refreshed every night.
+            For instantaneous update outside of the schedule, you may click on the Refresh Now button above." />
+        <Button
+            android:id="@+id/btnStartAlarm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable Nightly Updates"
+            android:onClick="startAlarm" />
+
+        <Button
+            android:id="@+id/btnCancelAlarm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel Nightly Updates"
+            android:onClick="cancelAlarm" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:text="Settings"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:padding="15dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember to click the Save button!" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="Time to update" />
+            <EditText
+                android:id="@+id/EditSchTime"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.40"
+                android:hint="01:00">
+            </EditText>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:text="(hh:mm)" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ckwifi1" />
+            <TextView android:text="Only update on WIFI" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txtwifi1" android:layout_toRightOf="@+id/ckwifi1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="Store" />
+            <EditText
+                android:id="@+id/EditDateRange"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.40"
+                android:hint="2">
+            </EditText>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:text="GPS weeks of data" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Note: Maximum of 4 weeks allowed. One 7-day GPS week of data takes 6-10 mins to download on a 2 Mbps download speed. You may close the app, the download will run in the background." />
+
+        <TextView
+            android:text="GPS Satellites"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:padding="15dp"
+            android:gravity="left"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/layoutGPS1">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="left" android:src="@drawable/satredicon" />
+            <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ckgps1" android:layout_toRightOf="@+id/imglo1"/>
+            <TextView android:text="Show GPS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txtgps1" android:layout_toRightOf="@+id/ck1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:text="URL" />
+            <EditText
+                android:id="@+id/EditGPSURL"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.90"
+                android:hint="Enter GPS URL">
+            </EditText>
+        </LinearLayout>
+
+        <TextView
+            android:text="GLONASS Satellites"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:padding="15dp"
+            android:gravity="left"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/layoutglo1">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="left" android:src="@drawable/satblackicon" />
+            <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ckglo1" android:layout_toRightOf="@+id/imglo1"/>
+            <TextView android:text="Show GLONASS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txtglo1" android:layout_toRightOf="@+id/ck1"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:text="URL" />
+            <EditText
+                android:id="@+id/EditGLOURL"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.90"
+                android:hint="Enter GLONASS URL">
+            </EditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSaveSettings"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Settings"
+            android:onClick="saveSettings" />
+    </LinearLayout>
+</ScrollView>

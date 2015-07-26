@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+    <string name="app_name">= GNSS =</string>
+    <string name="location_name">Sat Map</string>
+    <string name="skyplot_name">Sky Plot</string>
+    <string name="testcalc_name">Calculator</string>
+    <string name="settings_name">Settings</string>
+    <string name="refresh_name">Refresh</string>
+
+    <string name="intro_message">UTA GNSS App</string>
+    <string name="location_message">World map</string>
+    <string name="skyplot_message">Skyplot</string>
+    <string name="testcalc_message">Test calculations</string>
+    <string name="default_message">Work in progress...</string>
+</resources>

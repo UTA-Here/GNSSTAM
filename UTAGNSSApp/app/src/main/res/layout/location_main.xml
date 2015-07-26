@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        class="com.google.android.gms.maps.MapFragment"/>
+
+    <TextView
+        android:text="Test"
+        android:textColor="#FF0000"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textStyle="bold"
+        android:id="@+id/satMapHeader"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:text="Time lapse slider"
+        android:textAppearance="?android:attr/textAppearanceSmallInverse"
+        android:textStyle="bold"
+        android:id="@+id/textViewProgress"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="0dp"/>
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:max="100"
+        style="@style/CustomSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="30dp"/>
+
+    <RelativeLayout
+        android:id="@+id/InnerRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+        <EditText
+            android:id="@+id/EditTime"
+            android:layout_toLeftOf="@+id/ButtonGo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000" />
+        <ImageButton
+            android:id="@+id/ButtonGo"
+            android:background="@drawable/button_image"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="go_location"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
+

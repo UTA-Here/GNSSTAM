@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <item name="menu_location" type="id"/>
+    <item name="menu_skyplot" type="id"/>
+    <item name="menu_testcalc" type="id"/>
+
+    <item name="menu_geo2xyz" type="id"/>
+    <item name="menu_xyz2geo" type="id"/>
+    <item name="menu_xyz2enu" type="id"/>
+    <item name="menu_enu2xyz" type="id"/>
+    <item name="menu_intsatpos" type="id"/>
+    <item name="menu_sateleazi" type="id"/>
+    <item name="menu_deg2rad" type="id"/>
+    <item name="menu_rad2deg" type="id"/>
+
+</resources>
